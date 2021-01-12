@@ -1,13 +1,13 @@
 <!--
 What Do We Need
-1. View Highscores (on the left)
-2. Timer (on the right)
-3. Container (in the center)
-4. Header of Container
+1. View Highscores (on the left) - DONE
+2. Timer (on the right) - DONE
+3. Container (in the center) - DONE
+4. Header of Container - DONE
 - Title
 - Questions
 5. Buttons of Container (answers to the questions)
-6. Solid line break
+6. Solid line break - DONE
 7. Wording that tells if answer is right or wrong
 -->
 
@@ -32,7 +32,7 @@ What Do We Need
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">View High Scores</a>
-          <b class="navbar-brand">Timer:</b>
+          <b class="navbar-brand">Time:</b>
         </div>
       </nav>
 
@@ -45,7 +45,7 @@ What Do We Need
                 <h1></h1>
             </header>
             <header class="col-md-4">
-                <h1>Question</h1>
+                <h1 id="questions">Question</h1>
             </header>
             <header class="col-md-4">
                 <h1></h1>
@@ -57,7 +57,7 @@ What Do We Need
                 <p></p>
             </div>
             <div class="col-md-4">
-                <p>1. Answer 1</p>
+                <p id="answerOne">1. Answer 1</p>
             </div>
             <div class="col-md-4">
                 <p></p>
@@ -69,7 +69,7 @@ What Do We Need
                 <p></p>
             </div>
             <div class="col-md-4">
-                <p>2. Answer 2</p>
+                <p id="answerTwo">2. Answer 2</p>
             </div>
             <div class="col-md-4">
                 <p></p>
@@ -81,7 +81,7 @@ What Do We Need
                 <p></p>
             </div>
             <div class="col-md-4">
-                <p>3. Answer 3</p>
+                <p id="answerThree">3. Answer 3</p>
             </div>
             <div class="col-md-4">
                 <p></p>
@@ -93,7 +93,7 @@ What Do We Need
                 <p></p>
             </div>
             <div class="col-md-4">
-                <p>4. Answer 4</p>
+                <p id="answerFour">4. Answer 4</p>
             </div>
             <div class="col-md-4">
                 <p></p>
@@ -108,7 +108,7 @@ What Do We Need
                 <em></em>
             </div>
             <div class="col-md-4">
-                <em>Correct! or Wrong..</em>
+                <em id="correctOrwrong">Correct! or Wrong..</em>
             </div>
             <div class="col-md-4">
                 <em></em>
