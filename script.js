@@ -1,42 +1,28 @@
-// Clicking on an answer option: moves to next question and declares right or wrong
-// Clicking on the wrong answer: decreases time, declares you were wrong, and moves onto next question
-// Clicking on the right answer: declares you were right and moves onto next question
-// Score given at the end is the time remaining
-// Entering initials at the end stores the score into "View High Scores"
-// Questions are looped like an array and for loop
+// GIVEN I am taking a code quiz
+// WHEN I click the start button
+// THEN a timer starts and I am presented with a question
+// WHEN I answer a question
+// THEN I am presented with another question
+// WHEN I answer a question incorrectly
+// THEN time is subtracted from the clock
+// WHEN all questions are answered or the timer reaches 0
+// THEN the game is over
+// WHEN the game is over
+// THEN I can save my initials and my score
 
+// Necessary Functions: Timer, Building Quiz, Show Results, Save Results
 
-// Variables
-var timer = document.querySelector("#timer");
-var questions = document.getElementById("#questions");
-var answerOne = document.getElementById("#answerOne");
-var answerTwo = document.getElementById("#answerTwo");
-var answerThree= document.getElementById("#answerThree");
-var answerFour = document.getElementById("#answerFour");
-var button = document.getElementById("#button");
-var correctOrwrong = document.getElementById("#correctOrwrong");
+//Timer
+    // Create a timer area and ID in HTML
+    // Select that ID in JS and create that into a variable (timer)
+    // Create a variable (timerTime) that will be the beginning time for the quiz (75s)
+    // Append timerTime to timer
+    // Create a function that will decrease timerTime by 1s for every 1s or an extra 15s if the answer is incorrect
 
-// Timer - starts at 75s, decreases by 1s every 1s or 15s every wrong answer, and stops after the last question
+var timer = $("#timer");
 var timerTime = 75;
+timer.append("Time: " + timerTime);
 
-var timeSpan = document.createElement("div");
-timeSpan.innerHTML = timerTime;
-timer.appendChild(timeSpan);
-
-document(button).on("click", function{
-    timerTime--;
-})
-
-
-// For Loop for Questions
-questions = ["Welcome to My Quiz!", "1.", "2.", "3. ", "4. ", "5. ", "You finished with a score of..."];
-
-for (i = 0; i < questions.length; i++) {
-
-};
-
-// For Loop for Answers
-answerOne = ["What is 1", "What is 1", "What is 1", "What is 1"];
-answerTwo = ["What is 2", "What is 2", "What is 2", "What is 2"];
-answerThree = ["What is 3", "What is 3", "What is 3", "What is 3"];
-answerFour = ["What is 4", "What is 4", "What is 4", "What is 4"];
+// Building Quiz
+    // Create questions and answers (array)
+    // Loop through each question and answer (for loop)
