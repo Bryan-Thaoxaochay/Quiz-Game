@@ -18,7 +18,7 @@
     // Create a function that will decrease timerTime by 1s for every 1s or an extra 15s if the answer is incorrect
 
 var timer = $("#timer");
-var timerTime = 75;
+var timerTime = 60;
 var appendTimer = timer.append("Time: " + timerTime);
 
 var interval = setInterval(function() {
@@ -37,36 +37,63 @@ var interval = setInterval(function() {
 
 
 // Questions and Answers in Arrays
-var questions = [
-   {question: "How old is Chris?", 
+var myQuestions = [
+
+    {question: "How old is Chris?", 
    answers: {
-       a: "Definitely 34", b: "I have no idea", c: "Old enough"
+       a: "Trick question", b: "Not even a bit", c: "Everyone!", d: "We don't think like computers"
     },
-    correctAnswer: "b"
+    correctAnswer: "a"
     },
 
    {question: "For this class, how confused are you?",
     answers: {
-        a: "Not even a bit", b: "No comment.", c: "Fist to five, probably five"
+        a: "I have no idea", b: "No comment.", c: "No one..", d: "Too many things to remember.."
     },
-    correctAnswer: "c"
+    correctAnswer: "b"
     },
 
    {question: "Who has had the best background so far in class?",
     answers: {
-        a: "Jayden", b: "Omaur", c:  "Blake: red wedding :("
+        a: "Old enough", b: "Fist to five, probably five.", c:  "People who don't turn on their cameras..", d: "The language doesn't add up!"
     },
-    correctAnswer: "c"
+    correctAnswer: "a"
     },
 
    {question: "Why is coding challenging?",
-    answers: {a: "We don't think like computers", b: "Too many things to remember..", c: "All of the above"
+    answers: {a: "A respectable 35", b: "Confusion is like a spectrum", c: "Definitely me", d: "All of the above and more"
     },
     correctAnswer: "c"
     }
 ];
 
 // Displaying Questions
-var questions = $("#questions");
+var questions = $("#quizContainer");
 
-questions.append($("<h1>" + myQuestions[0] + "</h1>"));
+questions.append($("<h1>" + myQuestions[0].question + "</h1>"));
+
+for (i = 0; i < myQuestions.length; i ++){
+    questions.append($("<button>" + myQuestions[i].answers.a + "</button>"));
+    questions.append($("<br>"));
+    };
+
+questions.append($("<h1>" + myQuestions[1].question + "</h1>"));
+
+for (i = 0; i < myQuestions.length; i ++){
+    questions.append($("<button>" + myQuestions[i].answers.b + "</button>"));
+    questions.append($("<br>"));
+    };
+
+questions.append($("<h1>" + myQuestions[2].question + "</h1>"));
+
+for (i = 0; i < myQuestions.length; i ++){
+    questions.append($("<button>" + myQuestions[i].answers.c + "</button>"));
+    questions.append($("<br>"));
+    };
+
+questions.append($("<h1>" + myQuestions[3].question + "</h1>"));
+
+for (i = 0; i < myQuestions.length; i ++){
+    questions.append($("<button>" + myQuestions[i].answers.d + "</button>"));
+    questions.append($("<br>"));
+    };
