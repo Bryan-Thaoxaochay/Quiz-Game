@@ -36,7 +36,7 @@ var interval = setInterval(function() {
     // Display questions and answers to HTML
 
 
-// Questions and Answers
+// Questions and Answers in Arrays
 var myQuestions = [
    "How old is Chris?",
    "For this class, how confused are you?",
@@ -72,4 +72,7 @@ var optionFour = [
     "All of the above"
 ]
 
-// Displaying Questions and Answers
+// Displaying Questions
+var questions = $("#questions");
+
+questions.append($("<h1>" + myQuestions[0] + "</h1>"));
