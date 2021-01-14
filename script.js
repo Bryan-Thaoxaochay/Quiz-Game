@@ -35,8 +35,10 @@ var interval = setInterval(function() {
 
 // Building Quiz
     // Create questions and answers (array)
-    // Loop through each question and answer (for loop)
+    // Display questions and answers to HTML
 
+
+// Questions and Answers
 var questions = [
     {question: "Questions 1: ", choices: ["a. ", "b. ", "c.", "d. "], correctAnswer: 0},
     {question: "Questions 2: ", choices: ["a. ", "b. ", "c.", "d. "], correctAnswer: 0},
@@ -44,9 +46,12 @@ var questions = [
     {question: "Questions 4: ", choices: ["a. ", "b. ", "c.", "d. "], correctAnswer: 0},
 ];
 
-for (i = 0; i < questions.length; i++){
-     $("button").on("click", function(){
-        // $("button").text(questions[i]);
-        console.log(questions[i]);
-})
-}
+// Displaying Questions and Answers
+
+
+// for (i = 0; i < questions.length; i++){
+//      $("button").on("click", function(){
+//         // $("button").text(questions[i]);
+//         console.log(questions[i]);
+// })
+// }
