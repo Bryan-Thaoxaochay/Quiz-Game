@@ -10,8 +10,6 @@
 // WHEN the game is over
 // THEN I can save my initials and my score
 
-// Necessary Functions: Timer, Building Quiz, Show Results, Save Results
-
 //Timer
     // Create a timer area and ID in HTML
     // Select that ID in JS and create that into a variable (timer)
@@ -39,19 +37,39 @@ var interval = setInterval(function() {
 
 
 // Questions and Answers
-var questions = [
-    {question: "Questions 1: ", choices: ["a. ", "b. ", "c.", "d. "], correctAnswer: 0},
-    {question: "Questions 2: ", choices: ["a. ", "b. ", "c.", "d. "], correctAnswer: 0},
-    {question: "Questions 3: ", choices: ["a. ", "b. ", "c.", "d. "], correctAnswer: 0},
-    {question: "Questions 4: ", choices: ["a. ", "b. ", "c.", "d. "], correctAnswer: 0},
+var myQuestions = [
+   "How old is Chris?",
+   "For this class, how confused are you?",
+   "Who has had the best background so far in class?",
+   "Why is coding challenging?"
 ];
 
+var optionOne = [
+    "Definitely 34",
+    "Not even a bit",
+    "Jayden",
+    "Too many things to remember.."
+]
+
+var optionTwo = [
+    "I have no idea",
+    "I've been lost",
+    "Omaur",
+    "It's a test to the mind"
+]
+
+var optionThree = [
+    "Old enough",
+    "Fist to five, probably five",
+    "Chris",
+    "We don't think like computers"
+]
+
+var optionFour = [
+    "A respectable 35",
+    "No comment.",
+    "Blake: red wedding :(",
+    "All of the above"
+]
+
 // Displaying Questions and Answers
-
-
-// for (i = 0; i < questions.length; i++){
-//      $("button").on("click", function(){
-//         // $("button").text(questions[i]);
-//         console.log(questions[i]);
-// })
-// }
