@@ -21,8 +21,32 @@
 
 var timer = $("#timer");
 var timerTime = 75;
-timer.append("Time: " + timerTime);
+var appendTimer = timer.append("Time: " + timerTime);
+
+var interval = setInterval(function() {
+    var timerDown = timerTime--;
+    // timer.append("Time: " + timerDown);
+    
+    if (timerDown <= 0) {
+    clearInterval(interval);
+    }
+}, 1000);
+
 
 // Building Quiz
     // Create questions and answers (array)
     // Loop through each question and answer (for loop)
+
+var questions = [
+    "Questions 1: ",
+    "Question 2: ",
+    "Question 3: ",
+    "Question 4: "
+];
+
+for (i = 0; i < questions.length; i++){
+     $("button").on("click", function(){
+        // $("button").text(questions[i]);
+        console.log(questions[i]);
+})
+}
