@@ -38,10 +38,10 @@ var interval = setInterval(function() {
     // Loop through each question and answer (for loop)
 
 var questions = [
-    "Questions 1: ",
-    "Question 2: ",
-    "Question 3: ",
-    "Question 4: "
+    {question: "Questions 1: ", choices: ["a. ", "b. ", "c.", "d. "], correctAnswer: 0},
+    {question: "Questions 2: ", choices: ["a. ", "b. ", "c.", "d. "], correctAnswer: 0},
+    {question: "Questions 3: ", choices: ["a. ", "b. ", "c.", "d. "], correctAnswer: 0},
+    {question: "Questions 4: ", choices: ["a. ", "b. ", "c.", "d. "], correctAnswer: 0},
 ];
 
 for (i = 0; i < questions.length; i++){
