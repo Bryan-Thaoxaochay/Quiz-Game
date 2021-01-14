@@ -10,13 +10,15 @@
 // WHEN the game is over
 // THEN I can save my initials and my score
 
-//Timer
-    // Create a timer area and ID in HTML
-    // Select that ID in JS and create that into a variable (timer)
-    // Create a variable (timerTime) that will be the beginning time for the quiz (75s)
-    // Append timerTime to timer
-    // Create a function that will decrease timerTime by 1s for every 1s or an extra 15s if the answer is incorrect
 
+
+// Function for Starting Game
+
+var button = $("button"); // Selecting <button> from HTML
+var correctOrwrong = $("#correctOrwrong"); // Selecting <em> from HTML
+
+
+//Timer
 var timer = $("#timer");
 var timerTime = 60;
 var appendTimer = timer.append("Time: " + timerTime);
@@ -32,9 +34,6 @@ var interval = setInterval(function() {
 
 
 // Building Quiz
-    // Create questions and answers (array)
-    // Display questions and answers to HTML
-
 
 // Questions and Answers in Arrays
 var myQuestions = [
@@ -67,9 +66,10 @@ var myQuestions = [
     }
 ];
 
-// Displaying Questions
+// Displaying Questions and Answers
 var questions = $("#quizContainer");
 
+    // First Question and Answers
 questions.append($("<h1>" + myQuestions[0].question + "</h1>"));
 
 for (i = 0; i < myQuestions.length; i ++){
@@ -77,6 +77,7 @@ for (i = 0; i < myQuestions.length; i ++){
     questions.append($("<br>"));
     };
 
+    // Second Question and Answers
 questions.append($("<h1>" + myQuestions[1].question + "</h1>"));
 
 for (i = 0; i < myQuestions.length; i ++){
@@ -84,6 +85,7 @@ for (i = 0; i < myQuestions.length; i ++){
     questions.append($("<br>"));
     };
 
+    // Third Question and Answers
 questions.append($("<h1>" + myQuestions[2].question + "</h1>"));
 
 for (i = 0; i < myQuestions.length; i ++){
@@ -91,9 +93,12 @@ for (i = 0; i < myQuestions.length; i ++){
     questions.append($("<br>"));
     };
 
+    // Fourth Question and Answers
 questions.append($("<h1>" + myQuestions[3].question + "</h1>"));
 
 for (i = 0; i < myQuestions.length; i ++){
     questions.append($("<button>" + myQuestions[i].answers.d + "</button>"));
     questions.append($("<br>"));
     };
+
+
