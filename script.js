@@ -37,40 +37,34 @@ var interval = setInterval(function() {
 
 
 // Questions and Answers in Arrays
-var myQuestions = [
-   "How old is Chris?",
-   "For this class, how confused are you?",
-   "Who has had the best background so far in class?",
-   "Why is coding challenging?"
+var questions = [
+   {question: "How old is Chris?", 
+   answers: {
+       a: "Definitely 34", b: "I have no idea", c: "Old enough"
+    },
+    correctAnswer: "b"
+    },
+
+   {question: "For this class, how confused are you?",
+    answers: {
+        a: "Not even a bit", b: "No comment.", c: "Fist to five, probably five"
+    },
+    correctAnswer: "c"
+    },
+
+   {question: "Who has had the best background so far in class?",
+    answers: {
+        a: "Jayden", b: "Omaur", c:  "Blake: red wedding :("
+    },
+    correctAnswer: "c"
+    },
+
+   {question: "Why is coding challenging?",
+    answers: {a: "We don't think like computers", b: "Too many things to remember..", c: "All of the above"
+    },
+    correctAnswer: "c"
+    }
 ];
-
-var optionOne = [
-    "Definitely 34",
-    "Not even a bit",
-    "Jayden",
-    "Too many things to remember.."
-]
-
-var optionTwo = [
-    "I have no idea",
-    "I've been lost",
-    "Omaur",
-    "It's a test to the mind"
-]
-
-var optionThree = [
-    "Old enough",
-    "Fist to five, probably five",
-    "Chris",
-    "We don't think like computers"
-]
-
-var optionFour = [
-    "A respectable 35",
-    "No comment.",
-    "Blake: red wedding :(",
-    "All of the above"
-]
 
 // Displaying Questions
 var questions = $("#questions");
