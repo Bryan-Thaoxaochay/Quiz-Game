@@ -15,6 +15,9 @@ The purpose of this project was to create a quiz game that included questions, m
 Object in array
 setInterval
 appending
+more distinct variable names
+Always look for simple mistakes
+Unable to switch questions displayed
 
 # Description
 
