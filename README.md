@@ -30,11 +30,11 @@ When you enter the website, you will see a timer of 60 seconds and a button belo
 
 ## Before Quiz Begins
 
-![](HW-4-Quiz-Game/images/HW-4-Quiz-Game-Img1.png)
+![](images/HW-4-Quiz-Game-Img1.png)
 
 ## After Quiz Begins
 
-![](HW-4-Quiz-Game/images/HW-4-Quiz-Game-Img2.png)
+![](images/HW-4-Quiz-Game-Img2.png)
 
 # Links
 
