@@ -1,20 +1,3 @@
-// GIVEN I am taking a code quiz
-// WHEN I click the start button
-// THEN a timer starts and I am presented with a question
-// WHEN I answer a question
-// THEN I am presented with another question
-// WHEN I answer a question incorrectly
-// THEN time is subtracted from the clock
-// WHEN all questions are answered or the timer reaches 0
-// THEN the game is over
-// WHEN the game is over
-// THEN I can save my initials and my score
-
-
-
-
-
-
 //Variables for Timer
 var timer = $("#timer");
 var timerTime = 60;
@@ -36,6 +19,7 @@ function startGame() {
             var timerDown = timerTime--;
             timer.append("Time: " + timerDown);
             
+            
             if (timerDown <= 0) {
             clearInterval(interval);
             }
@@ -45,7 +29,7 @@ function startGame() {
         questions.append($("<h1>" + myQuestions[0].question + "</h1>"));
 
         for (i = 0; i < myQuestions.length; i ++){
-            questions.append($("<button>" + myQuestions[i].answers.a + "</button>"));
+            var firstQuestion = questions.append($("<button>" + myQuestions[i].answers.a + "</button>"));
             questions.append($("<br>"));
             };
 
