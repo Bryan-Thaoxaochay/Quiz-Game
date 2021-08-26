@@ -28,7 +28,13 @@ When you enter the website, you will see a timer of 60 seconds and a button belo
 
 # Screenshots
 
+## Before Quiz Begins
 
+![](images/HW-4-Quiz-Game-Img1.png)
+
+## After Quiz Begins
+
+![](images/HW-4-Quiz-Game-Img2.png)
 
 # Links
 
