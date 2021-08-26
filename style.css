@@ -21,18 +21,18 @@ main {
     margin: auto;
 }
 
-main h2 {
+#intro {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     text-align: center;
 }
 
-main p {
+#rules {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-main button {
+#start-quiz-button {
     background-color: blueviolet;
     border-radius: 8%;
     border: 1px black solid;
@@ -50,11 +50,12 @@ main button:hover {
     box-shadow: 0 0 0 3px lightblue;
 }
 
-/* main ol {
+#answers {
+    display: none;
     padding: 0;
 }
 
-main ol button {
+.option-button {
     background-color: blueviolet;
     border-radius: 8%;
     border: 1px black solid;
@@ -63,13 +64,24 @@ main ol button {
     padding: 2% 7%;
 }
 
-main ol button li {
+#question {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+#option-one, #option-two, #option-three, #option-four  {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 
-main p strong {
+hr {
+    display: none;
+}
+
+#response {
+    display: none;
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-} */
+}

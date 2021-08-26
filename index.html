@@ -16,23 +16,22 @@
     <br><br>
 
     <main>
-        <h2>Welcome To My Game!</h2>
-        <p>Try to answer the following questions in the fastest time possible. Wrong answers will decrease the time.
+        <h2 id="intro">Welcome To My Game!</h2>
+        <p id="rules">Try to answer the following questions in the fastest time possible. Wrong answers will decrease the time.
         Reaching zero will end the game. The amount of time left is your score for the game.</p>
         <button id="start-quiz-button">Start Quiz</button>
 
-        <!-- <h2>Question</h2>
-        <ol>
-            <button><li>Lorem ipsum dolor sit, amet consectetur.</li></button>
-            <button><li>Lorem ipsum dolor sit, amet consectetur.</li></button>
-            <button><li>Lorem ipsum dolor sit, amet consectetur.</li></button>
-            <button><li>Lorem ipsum dolor sit, amet consectetur.</li></button>
-
+        <h2 id="question"></h2>
+        <ol id="answers">
+            <button class="option-button"><li id="option-one"></li></button>
+            <button class="option-button"><li id="option-two"></li></button>
+            <button class="option-button"><li id="option-three"></li></button>
+            <button class="option-button"><li id="option-four"></li></button>
         </ol>
 
         <hr>
 
-        <p><strong>Correct Answer!</strong></p> -->
+        <p id="response"><strong>Correct Answer!</strong></p>
     </main>
 
     <script src="./js/script.js" type="module"></script>
