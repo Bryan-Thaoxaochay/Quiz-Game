@@ -1,14 +1,14 @@
 const questions = [
     {
-        question: "a",
-        optionOne: "a1",
-        optionTwo: "a2",
-        optionThree: "a3",
-        optionFour: "a4",
+        question: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quae?",
+        optionOne: "Lorem ipsum dolor, sit amet consectetur",
+        optionTwo: "Lorem ipsum dolor, sit amet consectetur",
+        optionThree: "Lorem ipsum dolor, sit amet consectetur",
+        optionFour: "Lorem ipsum dolor, sit amet consectetur",
         answer: this
     },
     {
-        question: "b",
+        question: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quae?",
         optionOne: "b1",
         optionTwo: "b2",
         optionThree: "b3",
@@ -16,7 +16,7 @@ const questions = [
         answer: this
     },
     {
-        question: "c",
+        question: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quae?",
         optionOne: "c1",
         optionTwo: "c2",
         optionThree: "c3",
@@ -24,7 +24,7 @@ const questions = [
         answer: this
     },
     {
-        question: "d",
+        question: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quae?",
         optionOne: "d1",
         optionTwo: "d2",
         optionThree: "d3",
