@@ -1,35 +1,35 @@
 const questions = [
     {
         question: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quae?",
-        optionOne: "Lorem ipsum dolor, sit amet consectetur",
-        optionTwo: "Lorem ipsum dolor, sit amet consectetur",
-        optionThree: "Lorem ipsum dolor, sit amet consectetur",
-        optionFour: "Lorem ipsum dolor, sit amet consectetur",
-        answer: this
+        optionOne: "a1 Lorem ipsum dolor, sit amet consectetur",
+        optionTwo: "a2 Lorem ipsum dolor, sit amet consectetur",
+        optionThree: "a3 Lorem ipsum dolor, sit amet consectetur",
+        optionFour: "a4 Lorem ipsum dolor, sit amet consectetur",
+        answer: () => { return questions[0].optionOne }
     },
     {
         question: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quae?",
-        optionOne: "b1",
-        optionTwo: "b2",
-        optionThree: "b3",
-        optionFour: "b4",
-        answer: this
+        optionOne: "b1 Lorem ipsum dolor, sit amet consectetur",
+        optionTwo: "b2 Lorem ipsum dolor, sit amet consectetur",
+        optionThree: "b3 Lorem ipsum dolor, sit amet consectetur",
+        optionFour: "b4 Lorem ipsum dolor, sit amet consectetur",
+        answer: () => { return questions[1].optionTwo }
     },
     {
         question: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quae?",
-        optionOne: "c1",
-        optionTwo: "c2",
-        optionThree: "c3",
-        optionFour: "c4",
-        answer: this
+        optionOne: "c1 Lorem ipsum dolor, sit amet consectetur",
+        optionTwo: "c2 Lorem ipsum dolor, sit amet consectetur",
+        optionThree: "c3 Lorem ipsum dolor, sit amet consectetur",
+        optionFour: "c4 Lorem ipsum dolor, sit amet consectetur",
+        answer: () => { return questions[2].optionThree }
     },
     {
         question: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quae?",
-        optionOne: "d1",
-        optionTwo: "d2",
-        optionThree: "d3",
-        optionFour: "d4",
-        answer: this
+        optionOne: "d1 Lorem ipsum dolor, sit amet consectetur",
+        optionTwo: "d2 Lorem ipsum dolor, sit amet consectetur",
+        optionThree: "d3 Lorem ipsum dolor, sit amet consectetur",
+        optionFour: "d4 Lorem ipsum dolor, sit amet consectetur",
+        answer: () => { return questions[3].optionFour }
     },
 ]
 

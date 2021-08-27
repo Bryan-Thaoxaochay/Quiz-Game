@@ -10,6 +10,8 @@ const optionOne = document.querySelector("#option-one");
 const optionTwo = document.querySelector("#option-two");
 const optionThree = document.querySelector("#option-three");
 const optionFour = document.querySelector("#option-four");
+const horizontalLine = document.querySelector("hr");
+const answerIndicator = document.querySelector("#response");
 
 
 startButton.addEventListener("click", startGame);
@@ -35,7 +37,8 @@ function startGame() {
     answersText.addEventListener("click", (event) => {
         if (event.target.tagName === "LI" || event.target.tagName === "BUTTON") {
             questionNumber += 1;
-            displayNextQuestion(questionNumber);
+            let userAnswer = event.target.textContent;
+            displayNextQuestion(questionNumber, userAnswer);
         }
     });
 
@@ -55,12 +58,21 @@ function displayQuestion(questionNumber) {
 
     questionText.style.display = "block";
     answersText.style.display = "block";
+    horizontalLine.style.display = "block";
+    answerIndicator.style.display = "block";
 }
 
-function displayNextQuestion(questionNumber) {
+function displayNextQuestion(questionNumber, userAnswer) {
     questionText.innerHTML = questions[questionNumber].question;
     optionOne.innerHTML = questions[questionNumber].optionOne;
     optionTwo.innerHTML = questions[questionNumber].optionTwo;
     optionThree.innerHTML = questions[questionNumber].optionThree;
     optionFour.innerHTML = questions[questionNumber].optionFour;
+
+    if (userAnswer === questions[questionNumber-1].answer()) {
+        answerIndicator.innerHTML = "Correct!";
+    } else {
+        answerIndicator.innerHTML = "Wrong";
+    }
+
 }
