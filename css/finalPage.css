@@ -1,0 +1,15 @@
+#ending {
+    display: none;
+}
+
+#score-text {
+    display: none;
+}
+
+#initials {
+    display: none;
+}
+
+#save-score-button, #play-again-button, #high-scores-button {
+    display: none;
+}

@@ -49,39 +49,3 @@ main button:hover {
     color: lightblue;
     box-shadow: 0 0 0 3px lightblue;
 }
-
-.option-button {
-    background-color: blueviolet;
-    border-radius: 8%;
-    border: 1px black solid;
-    color: white;    
-    margin: 1% 0%;
-    padding: 2% 7%;
-}
-
-#question {
-    display: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-}
-
-#answers {
-    display: none;
-    padding: 0;
-}
-
-#option-one, #option-two, #option-three, #option-four  {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
-
-hr {
-    display: none;
-}
-
-#response {
-    display: none;
-    color: gray;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-}
