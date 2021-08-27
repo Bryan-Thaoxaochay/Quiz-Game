@@ -16,12 +16,15 @@ const answerIndicator = document.querySelector("#response");
 
 startButton.addEventListener("click", startGame);
 
-const timer = document.querySelector("#time");
+const timerEl = document.querySelector("#time");
 let time = 60;
+let timer;
+
+
 let questionNumber = 0;
 
 function setTimer() {
-    timer.innerHTML = `Time: ${time}`
+    timerEl.innerHTML = `Time: ${time}`
     time -= 1;
     if (time === 0) {
         alert("Game Over!");
@@ -30,7 +33,7 @@ function setTimer() {
 }
 
 function startGame() {
-    // setInterval(setTimer, 1000);
+    timer = setInterval(setTimer, 1000);
 
     displayQuestion(questionNumber);
 
@@ -73,6 +76,9 @@ function displayNextQuestion(questionNumber, userAnswer) {
         answerIndicator.innerHTML = "Correct!";
     } else {
         answerIndicator.innerHTML = "Wrong";
+        clearInterval(timer);
+        time -= 5;
+        timer = setInterval(setTimer, 1000);
     }
 
 }
