@@ -1,47 +1,43 @@
-# HW-4-Quiz-Game
+# [Quiz-Game](https://bryan-thaoxaochay.github.io/Quiz-Game/)
 
-# Purpose
+## Description
 
-The purpose of this project was to create a quiz game that included questions, multiple choice answers, a timer, getting to save score, and getting to view the highest scores.
+### Purpose
 
-# What I Learned
+Creating a multiple-choice quiz game that also displays the highest scores of the users who have played.
 
-## HTML
+### Technologies Used
 
-For HTML, I learned that it doesn't have to have a lot of elements to accomplish what we need to do. At first, I started with organizing the rows and columns with Bootstrap. However, that just confused me. It did make it look more organized however.
+- HTML5
+- CSS3
+- JavaScript
 
-## CSS
+## Demonstrations
 
-Unfortunately, I didn't get to make it to CSS. Figuring out the JS took up most of my time.
+### Rules
+- You are given **60 seconds** to answer the questions.
+- For each question answered incorrectly, 5 seconds will be deducted from the timer. 
+- The game ends either by the timer reaching 0 or you have answered all the questions.
+- Your score is the amount of time left on the timer after finishing the questions.
 
-## JS
+### Step-by-Step Process
 
-I feel like a lot of my time was spent wasted on figuring out why my code wasn't working because the logic was flawed. In part, the logic was flawed. However, I spent too much thinking about how the logic was flawed instead of noticing that it was either syntax or using the wrong variables (this part messed me up) causing the trouble. For instance, I wasted a lot of time trying to call out stuff in my array because I used the wrong variable. 
+1. Click the **Start Quiz** button.
+2. Read the question and choose an answer by clicking on it. Repeat this for all the answers.
+3. Once finished, your score will be displayed with the option of saving it with your initials.
+4. After saving, you will have the option of playing again or viewing the high scores.
 
-These were the negatives, but here are some positives. I was able to create multiple objects in an array and append them onto the webpage. I created a timer that ran almost perfect (the timer kept appending and appending onto itself). I learned how important it is to have distinct and logical variable names. And lastly, I learned to look for the simple mistakes instead of questioning the whole set of code.
+### Example
 
-Here are the things I need to work on. I need to learn how to set up the timer so that it doesn't keep appending to itself after every interval. I need to learn how the questions and answers are able to switch when the button is clicked. I need to learn how to do the if/else statement for when questions are answered. Finally, I need to learn how to store the score and initials and place it onto a separate webpage.
+## License
 
-# Description
+The MIT License
 
-When you enter the website, you will see a timer of 60 seconds and a button below that will say "Start Quiz". Clicking the button will start the timer countdown and display the questions and answer choices. However, nothing else will happen after that since no events will take place after clicking the answer choices.
+Copyright (c) 2021 Bryan Thaoxaochay
 
-# Screenshots
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-## Before Quiz Begins
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-![](images/HW-4-Quiz-Game-Img1.png)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## After Quiz Begins
-
-![](images/HW-4-Quiz-Game-Img2.png)
-
-# Links
-
-## Webpage URL
-
-https://bryan-thaoxaochay.github.io/HW-4-Quiz-Game/ 
-
-## Github Repo
-
-https://github.com/Bryan-Thaoxaochay/HW-4-Quiz-Game 
