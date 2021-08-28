@@ -1,15 +1,33 @@
 #ending {
     display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
 }
 
 #score-text {
     display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
 }
 
 #initials {
     display: none;
+    margin: auto;
 }
 
 #save-score-button, #play-again-button, #high-scores-button {
-    display: none;
+    display: none;    
+}
+
+#save-score-button {
+    background-color: blueviolet;
+    border-radius: 8%;
+    border: 1px black solid;
+    color: white;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 5px;
 }

@@ -87,7 +87,7 @@ function quizDone() {
     answerIndicator.style.display = "none";
 
     finalHeader.innerHTML = "You finished the quiz!";
-    scoreText.innerHTML = "Your score is ...";
+    scoreText.innerHTML = `Your score is ${time}`;
     initialInput.innerHTML = "Please input your initials";
     saveButton.innerHTML = "Save Score";
 
