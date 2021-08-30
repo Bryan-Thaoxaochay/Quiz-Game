@@ -19,9 +19,6 @@
 
 #save-score-button, #play-again-button, #high-scores-button {
     display: none;    
-}
-
-#save-score-button {
     background-color: blueviolet;
     border-radius: 8%;
     border: 1px black solid;

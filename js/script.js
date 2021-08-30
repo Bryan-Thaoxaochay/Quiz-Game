@@ -80,6 +80,8 @@ const finalHeader = document.querySelector("#ending");
 const scoreText = document.querySelector("#score-text");
 const initialInput = document.querySelector("#initials");
 const saveButton = document.querySelector("#save-score-button");
+// const playAgainButton = document.querySelector("#play-again-button");
+const highScoresButton = document.querySelector("#high-scores-button");
 function quizDone() {
     questionText.style.display = "none";
     answersText.style.display = "none";
@@ -90,12 +92,48 @@ function quizDone() {
     scoreText.innerHTML = `Your score is ${time}`;
     initialInput.innerHTML = "Please input your initials";
     saveButton.innerHTML = "Save Score";
+    // playAgainButton.innerHTML = "Play Again";
+    highScoresButton.innerHTML = "View High Scores";
 
     finalHeader.style.display = "block";
     scoreText.style.display = "block";
     initialInput.style.display = "block";
     saveButton.style.display = "block";
+    // playAgainButton.style.display = "block";
+    highScoresButton.style.display = "block";
 
     timerEl.style.display = "none";
     clearInterval(timer);
+
+    saveButton.addEventListener("click", saveScore);
+    highScoresButton.addEventListener("click", displayHighScores);
+}
+
+function saveScore() {
+    let initials = initialInput.value;
+    localStorage.setItem(initials, time);
+}
+
+const scoreTitleEl = document.querySelector("#scores-title");
+const scoresEl = document.querySelector("#scores");
+let scoresArray = [];
+function displayHighScores() {
+    finalHeader.style.display = "none";
+    scoreText.style.display = "none";
+    initialInput.style.display = "none";
+    saveButton.style.display = "none";
+    highScoresButton.style.display = "none";
+
+    scoreTitleEl.style.display = "block";
+    scoresEl.style.display = "block";
+
+    scoreTitleEl.innerHTML = "High Scores";
+    
+    scoresArray = [localStorage];
+    console.log(scoresArray);
+    // scoresArray.forEach(score => {
+    //     let liEl = document.createElement("li");
+    //     liEl.innerHTML = score;
+    //     scoresEl.appendChild(liEl);
+    // })
 }
